@@ -1,0 +1,50 @@
+body {
+    background-color: #0d0d0d;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-card {
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden; /* Important to hide the parts of the profile pic that exceed the border-radius */
+}
+.header {
+    position: relative;
+}
+.background {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+}
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -40px; /* Keeps the profile pic below the background */
+    transform: translateX(-50%);
+    border: none; /* Removes the white border around the profile picture */
+    z-index: 1; /* Ensures the profile picture is above the background */
+}
+.info {
+    margin-top: 60px; /* Moves the text (Alcxxh) lower so it doesn't overlap the profile picture */
+}
+h1 {
+    margin: 0; /* Removes any default margin around the heading */
+}
